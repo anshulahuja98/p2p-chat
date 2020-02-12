@@ -100,8 +100,3 @@ class P2P:
         self.receiving_thread.join()
         self.send_thread.join()
         self.broadcast_online_status_thread.join()
-
-
-if __name__ == '__main__':
-    p2p = P2P()
-    p2p.main()
