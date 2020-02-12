@@ -26,18 +26,6 @@ class P2P:
                 self.online_users.append(message_str)
                 print('>> Current online users: ' + str(len(self.online_users)))
 
-    def generate_unique_username(self):
-        self.name = "%06x" % random.randint(0, 0xFFFFFF)
-        pass
-
-    def send_specific_user(self):
-        pass
-
-    def cleanup(self):
-        # alive = [0] * len(self.on)
-        # remove hosts from which no ping!
-        pass
-
     def broadcast_message(self):
         self.send_socket.setblocking(False)
         while True:
